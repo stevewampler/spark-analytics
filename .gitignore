@@ -1,0 +1,69 @@
+# Ignore generated build descriptors
+build.properties
+
+#java specific
+*.class
+.gradle/*
+
+build/
+out/
+project/project/
+project/target/
+target/
+
+# in general we want to ignore .gitignore
+# .gitignore
+
+# IDEA project files
+*.iml
+*.ipr
+*.iws
+*.ids
+.idea/
+
+# Eclipse project files
+.settings/
+.classpath
+.project
+
+# Ctags stuff
+tags
+
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+## classes in WEB-INF
+classes*
+
+WebContent/WEB-INF/lib/*
+
+
+*.bz2
+*.pyc
+*.deb
+
+.rakeTasks
+
+# LittleProxy generates some files
+/lib/
+*.class
+*.log
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
