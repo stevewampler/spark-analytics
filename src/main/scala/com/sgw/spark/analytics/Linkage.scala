@@ -76,7 +76,7 @@ object Linkage {
       .setMaster("local[*]")
     val sc = new SparkContext(conf)
 
-    val rawblocks = sc.textFile("/Users/steve/AdvanceAnalyticsWithSpark/rc/main/resources/linkage/blocks/")
+    val rawblocks = sc.textFile("/Users/steve/spark-analytics/rc/main/resources/linkage/blocks/")
 
     val noheader = rawblocks.filter(!isHeader(_))
 
